@@ -1,0 +1,63 @@
+{
+  "name": "react-redux-build",
+  "version": "1.0.0",
+  "description": "basic react redux build",
+  "main": "''",
+  "scripts": {
+    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "start": "npm-run-all -p test:watch start-dev",
+    "start-dev": "sleep 3 && webpack-dev-server --progress --colors",
+    "test": "mocha tests/test-setup.js \"./**/*.spec.js\" --reporter progress",
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint --ext js --ext jsx src || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senluchen2015/react-redux-build"
+  },
+  "author": "Sen Lu Tom Chen",
+  "dependencies": {
+    "react": "15.4.1",
+    "react-dom": "15.4.1",
+    "react-redux": "5.0.1",
+    "react-router": "3.0.2",
+    "react-router-redux": "4.0.5",
+    "redux": "3.6.0",
+    "redux-thunk": "2.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.5.4",
+    "babel-core": "6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "6.2.10",
+    "babel-plugin-transform-class-properties": "6.19.0",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babel-runtime": "6.20.0",
+    "chai": "3.5.0",
+    "css-loader": "0.26.1",
+    "eslint": "3.12.2",
+    "eslint-plugin-react": "6.8.0",
+    "extract-text-webpack-plugin": "2.0.0-rc.3",
+    "file-loader": "0.9.0",
+    "html-webpack-plugin": "2.24.1",
+    "mocha": "3.2.0",
+    "normalize.css": "5.0.0",
+    "node-sass": "3.8.0",
+    "npm-run-all": "3.0.0",
+    "postcss-loader": "1.2.1",
+    "react-hot-loader": "3.0.0-beta.6",
+    "redux-logger": "2.7.4",
+    "sass-loader": "4.1.0",
+    "sinon": "1.17.7",
+    "sinon-chai": "2.8.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "2.2.1",
+    "webpack-cleanup-plugin": "0.4.1",
+    "webpack-dev-server": "2.3.0",
+    "webpack-notifier": "1.5.0"
+  }
+}

@@ -1,0 +1,10 @@
+@import "~static/css/variables.scss";
+
+body {
+    background: $background;
+    font-family: arial;
+    main {
+        display: flex;
+        height: 90vh;
+    }
+}
