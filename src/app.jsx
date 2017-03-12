@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import 'static/css/main.scss';
 
 class App extends React.Component {
     render() {

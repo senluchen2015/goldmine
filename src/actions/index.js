@@ -1,1 +1,3 @@
-export const INCREASE = 'INCREASE';
+export const SET_LOCATION = 'SET_LOCATION';
+export const SET_MAP_VALUES = 'SET_MAP_VALUES';
+export const SET_COMPANIES = 'SET_COMPANIES';

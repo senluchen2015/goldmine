@@ -1,8 +1,8 @@
 import { routerReducer } from 'react-router-redux';
-import exampleReducer from './example-reducer';
+import mapReducer from './map-reducer';
 
 const reducer = {
-    example: exampleReducer,
+    map: mapReducer,
     routing: routerReducer,
 };
 

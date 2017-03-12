@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Root from './root';
+import 'static/css/main.scss';
 
 render(<Root />, document.querySelector('#app'));
 

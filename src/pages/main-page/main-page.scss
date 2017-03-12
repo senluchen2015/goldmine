@@ -1,0 +1,10 @@
+.main-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    section {
+        width: 50vw;
+        height: 100vh;
+        background: lightblue;
+    }
+}

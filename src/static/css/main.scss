@@ -1,8 +1,10 @@
+@import "normalize.css";
 @import "~static/css/variables.scss";
 
 body {
+    font-family: 'Roboto', sans-serif;
     background: $background;
-    font-family: arial;
+    margin: 0;
     main {
         display: flex;
         height: 90vh;

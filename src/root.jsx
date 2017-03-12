@@ -13,7 +13,7 @@ class Root extends React.Component {
             <AppContainer>
                 <Provider store={store}>
                     <Router key={Math.random()} history={history}>
-                        {routes}
+                        {routes(store)}
                     </Router>
                 </Provider>
             </AppContainer>
