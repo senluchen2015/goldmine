@@ -1,21 +1,30 @@
 .company-item {
     margin-bottom: 5px;
-    &:nth-child(odd) {
-        background: white;
-    }
-    &:nth-child(even) {
-        background: white;
-    }
+    cursor: pointer;
+    background: white;
     .list-view {
+        &:hover {
+            background: lightgrey;
+            transition: all 0.3s ease;
+            transform: scale(1.01);
+        }
         box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
         display: flex;
         align-items: center;
         padding: 10px;
-
+        label {
+            font-weight: bold;
+            width: 15%;
+        }
         img {
+            border: 1px solid black;
+            margin-right: 1em;
             overflow: hidden;
             width: 50px;
             height: 50px;
+        }
+        p {
+            width: 60%;
         }
     }
 }

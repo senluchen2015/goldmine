@@ -43,7 +43,7 @@ class Map extends React.Component {
                                 zoom={zoom}
                             >
                                 <p>{m.name}</p>
-
+                                <img src={m.logo} />
                             </Marker>
                         );
                     })}
